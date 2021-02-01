@@ -8,21 +8,55 @@
 <body>
     <h1>In this project I learned how to display images in different projections</h1>
     
-    <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
-    <p>You can write a paragraph here</p>
+    <h2 style="color:red">For each of the following projections, I used the natural earth background provided on sakai. I clicked on the EPSG button in the bottom bar of QGIS, followed by the CRS tab in the project properties window, to select a projection. I used the indicatrix tile to engage Tissot's Indicatrix. </h2>
+    <p>Lillian Cooper - GEOG.370.006</p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The WGS84 (Mercator) projection is used in classrooms and for navigation because it preserves area at low lattitudes and direction at all latitiudes. The Mercator projection is misleading because it exaggerates area near the poles.</h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The Aitoff projection is like the Mercator projection in that it exaggerates area near the poles. The Aitoff projection is unline the Mercator projection because it does not have straight latitude/longitude lines. As a result, it does not preserve direction with precision comparable to the Mercator projection.</h3>
     <a href=".//maps/54043.png">
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>
-    <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
-    <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
+    <h2>Pseudo-Mercator Projection</h2>
+    <h3>The Pseudo-Mercator projection preserves area at low lattitudes and preserves direction at all latitiudes, making it useful for navigation. However, this projection distorts area at high latitudes. For example, Greenland appears to be approximately the size of Africa even though Greenland is several magnitudes smaller than Africa.</h3>
+    <a href=".//maps/Pseudo-mercator, EPSG 3857.png">
+    <img src=".//maps/Pseudo-mercator, EPSG 3857.png" alt="Pseudo-Mercator" width='500px'>
+    </a>
+    <h2>Sphere Winkel Projection</h2>
+    <h3>The Sphere Winkel projection distorts area somewhat at the poles. However, the distortion gradient is not as severe as what is seen in the Mercator projection. The Sphere Winkel projection preserves latitudinal direction because it has straight latitude lines, and it does not preserve longitudinal direction because the longitude lines are curved.</h3>
+    <a href=".//maps/Sphere Winkel, EPSG 53018.png">
+    <img src=".//maps/Sphere Winkel, EPSG 53018.png" alt="Sphere Winkel" width='500px'>
+    </a>
+    <h2>World Cylindrical Equal Area Projection</h2>
+    <h3>Like the Mercator projection, the World Cylindrical Equal Area projection preserves latitudinal and longitudinal direction. Also like the Mercator projection, the World Cylindrical Equal Area projection distorts land area at the poles. The World Cylindrical Equal Area projection is more latitudinally stretched at the poles than the Mercator projection.</h3>
+    <a href=".//maps/World Cylindrical Equal Area, EPSG 54034.png">
+    <img src=".//maps/World Cylindrical Equal Area, EPSG 54034.png" alt="World Cylindrical Equal Area" width='500px'>
+    </a>
+    <h2>World Equidistant Conic Projection</h2>
+    <h3>The World Equidistant Conic projection minimally distorts area at the north pole, but the latitudinal distortion increases with proximity to the south pole.</h3>
+    <a href=".//maps/World Equidistant Conic, EPSG 54027.png">
+    <img src=".//maps/World Equidistant Conic, EPSG 54027.png" alt="World Equidistant Conic" width='500px'>
+    </a>
+    <h2>North Pole Azimuthal Equidistant Projection</h2>
+    <h3>Similarly to the World Equidistant Conic projection, the North Pole Azimuthal Equidistant projection minimally distorts area at the north pole, and the latitudinal distortion increases with proximity to the south pole. </h3>
+    <a href=".//maps/North Pole Azimuthal Equidistant, EPSG 102016.png">
+    <img src=".//maps/North Pole Azimuthal Equidistant, EPSG 102016.png" alt="North Pole Azimuthal Equidistant" width='500px'>
+    </a>
+    <h2>World Mollweide Projection</h2>
+    <h3>The World Mollweide projection has a relatively uniform degree of distortion at all latitudes/longitudes, and does not preserve direction because the latitude and longitude lines are curved.</h3>
+    <a href=".//maps/World Mollweide, EPSG 54009.png">
+    <img src=".//maps/World Mollweide, EPSG 54009.png" alt="World Mollweide" width='500px'>
+    </a>
+    <h2>World Eckert VI Projection</h2>
+    <h3>But for the flat cut off at either pole, the World Eckert VI projection appears to be identical to the World Mollweide projection (i.e. uniform distortion at all latitudes/longitudes, direction not preserved).</h3>
+    <a href=".//maps/World Eckert VI, EPSG 54010.png">
+    <img src=".//maps/World Eckert VI, EPSG 54010.png" alt="World Eckert VI" width='500px'>
+    </a>
+
     <p></p>
     <h2>Data used for this project</h2>
     <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
