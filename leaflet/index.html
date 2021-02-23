@@ -50,13 +50,13 @@
         // L.geoJSON(watertower).addTo(map)
 
         var uncIcon = L.icon({ // notice the L.icon which is a Leaflet object with properties
-        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/12/Drinking_water.png',
+        iconUrl: 'https://commons.wikimedia.org/w/index.php?search=water+tower+icon&title=Special:Search&profile=advanced&fulltext=1&advancedSearch-current=%7B%7D&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1#/media/File:Water_tower.png',
         // this points to a jpg image obtained from the internet
         iconSize: [50,50], // size of the icon
         popupAnchor: [0,0] // where the icon is located relative to the lat lon of the point.
         });
 
-        var customPopup = "Water Tower<br/><img src='https://upload.wikimedia.org/wikipedia/commons/1/1a/Tarheel_water_tower.jpg'width='100px'/>";
+        var customPopup = "Water Tower<br/><img src='https://commons.wikimedia.org/w/index.php?search=water+tower+icon&title=Special:Search&profile=advanced&fulltext=1&advancedSearch-current=%7B%7D&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1#/media/File:Water_tower.png'width='100px'/>";
 
         L.geoJSON(watertower, { // a
         pointToLayer: function (feature, latlng) { // b
