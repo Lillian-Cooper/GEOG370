@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Homework 10: Geoprocessing Analysis</h1>
+    <h2>Lillian Cooper</h2>
+    <h3>What areas of North Carolina are within 5 miles of a Covid 19 testing center? </h3>
+    <h4>The following map displays areas of North Carolina that are within five miles of a COVID 19 testing center. The testing centers were plotted using data from URISA's GISCorps registry of COVID 19 testing centers. Multiple geoprocessing techniques were used to create this map. First, an intersection was created between the North Carolina polygon and the testing center point layer to eliminate all testing centers outside of the state. Next, a five mile buffer was created around each testing center in North Carolina. Then, a dissolve was applied to the buffer to eliminate redundant lines where the buffer overlapped. Finally, an intersection was created between the North Carolina polygon and the dissolved buffer to eliminate portions of the buffer that extended beyond the state boundary. </h4>
+
+    <!-- a png image of your map will be embedded using the lines below  -->
+    <a href="./NC_Test_Sites_5MI.png"> 
+        <img src="./NC_Test_Sites_5MI.png" alt="your map" width='500px'>
+        </a>
+
+    <!-- here you will link your data sources -->
+    <h2>Data used for this project</h2>
+    <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html">North Carolina Shapefile - Census.gov</a>
+    <p></p>
+    <a href="https://covid-19-giscorps.hub.arcgis.com/datasets/giscorps-covid-19-testing-locations-in-the-united-states-symbolized-by-test-type/data?geometry=70.566%2C-89.421%2C-85.527%2C85.788&orderBy=municipality&orderByAsc=false">National Testing Centers - URISA's GISCorps</a>
+    <p></p>
+    <a href="./Intersection_1.geojson">Intersection of state polygon and testing center point layer (geoJSON)</a>
+    <p></p>
+    <a href="./Buffer.geojson">Testing center buffer (geoJSON)</a>
+    <p></p>
+    <a href="./Dissolve.geojson">Dissolve of testing center buffer (geoJSON)</a>
+    <p></p>
+    <a href="./Intersection_2.geojson">Intersection of state polygon and dissolved testing center buffer (geoJSON)</a>
+    <p></p>
+
+</body>
+</html>
